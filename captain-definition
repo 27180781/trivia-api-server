@@ -1,6 +1,7 @@
 {
   "schemaVersion": 2,
   "dockerfileLines": [
+    "# Forcing a FINAL rebuild on July 9",
     "FROM node:18-alpine",
     "WORKDIR /usr/src/app",
     "COPY package*.json ./",
