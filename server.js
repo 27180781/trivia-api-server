@@ -26,7 +26,7 @@ app.get('/api/status', async (req, res) => {
 
     res.json({
       status: 'ok',
-      message: 'THIS IS THE NEW VERSION - JULY 9',.
+      message: 'THIS IS THE NEW VERSION - JULY 9',
       databaseTime: dbTime,
     });
   } catch (error) {
