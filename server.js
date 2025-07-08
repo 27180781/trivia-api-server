@@ -37,8 +37,9 @@ app.get('/api/status', async (req, res) => {
     });
   }
 });
-
 // 5. הפעלת השרת
 app.listen(PORT, () => {
   console.log(`✅ Server is running on port: ${PORT}`);
 });
+
+// <--- שום דבר לא אמור להופיע אחרי שורות אלה
