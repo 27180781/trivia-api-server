@@ -4,7 +4,7 @@ const { Pool } = require('pg');
 
 // 2. יצירת אפליקציית Express
 const app = express();
-const PORT = 3000; // הפורט שבו השרת יאזין
+const PORT = process.env.PORT || 3000;
 
 // 3. הגדרת החיבור למסד הנתונים (PostgreSQL)
 //    החלף את הערכים בפרטים של מסד הנתונים שלך!
@@ -40,5 +40,5 @@ app.get('/api/status', async (req, res) => {
 
 // 5. הפעלת השרת
 app.listen(PORT, () => {
-  console.log(`✅ Server is running on http://localhost:${PORT}`);
+  console.log(`✅ Server is running on port: ${PORT}`);
 });
